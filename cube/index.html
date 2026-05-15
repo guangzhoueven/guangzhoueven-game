@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>3D魔方小游戏</title>
+<meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+
+
+<script type="text/javascript" src="../public.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4725615404219961" crossorigin="anonymous"></script>
+    
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "jtddl410lx");
+</script>
+</head>
+<body>
+
+<div class="ui">
+
+  <div class="ui__background"></div>
+
+  <div class="ui__game"></div>
+
+  <div class="ui__texts">
+    <h1 class="text text--title">
+      <span>3D</span>
+      <span>魔方</span>
+    </h1>
+    <div class="text text--note">
+      双击魔方即可开始
+    </div>
+    <div class="text text--timer">
+      0:00
+    </div>
+    <div class="text text--complete">
+      <span>完成!</span>
+    </div>
+    <div class="text text--best-time">
+      <icon trophy></icon>
+      <span>破纪录!</span>
+    </div>
+  </div>
+
+  <div class="ui__prefs">
+    <range name="flip" title="切换动画" list="快速,丝滑,弹簧"></range>
+    <range name="scramble" title="打乱次数" list="20,25,30"></range>
+    <range name="fov" title="相机视图" list="正交,透视"></range>
+    <range name="theme" title="颜色方案" list="Cube,Erno,Dust,Camo,Rain"></range>
+  </div>
+
+  <div class="ui__stats">
+    <div class="stats" name="total-solves">
+      <i>通关次数:</i><b>-</b>
+    </div>
+    <div class="stats" name="best-time">
+      <i>最快耗时:</i><b>-</b>
+    </div>
+    <div class="stats" name="worst-time">
+      <i>最慢耗时:</i><b>-</b>
+    </div>
+    <div class="stats" name="average-5">
+      <i>5次平均:</i><b>-</b>
+    </div>
+    <div class="stats" name="average-12">
+      <i>12次平均:</i><b>-</b>
+    </div>
+    <div class="stats" name="average-25">
+      <i>25次平均:</i><b>-</b>
+    </div>
+  </div>
+
+  <div class="ui__buttons">
+    <button class="btn btn--bl btn--stats">
+      <icon trophy></icon>
+    </button>
+    <button class="btn btn--bl btn--prefs">
+      <icon settings></icon>
+    </button>
+    <button class="btn btn--bl btn--back">
+      <icon back></icon>
+    </button>
+    <button class="btn btn--br btn--pwa">
+    </button>
+  </div>
+
+</div>
+
+<script src='js/three.min.js'></script>
+<script src="js/index.js"></script>
+</body>
+</html>

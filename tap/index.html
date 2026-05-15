@@ -1,0 +1,65 @@
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<title>戳泡泡</title>
+	
+	<link rel="stylesheet" href="style.min.css"/>
+	<script type="text/javascript" src="prefixfree.min.js"></script>
+</head>
+<body onload='App.init()'>
+	<div id='general-container'>
+		<div id='menu-container'>
+			<h1 class='tit-home'>戳<canvas id='logo'></canvas>泡泡</h1>    
+			<center><a href='tap.html#' id='start-game-arcade' class='arcade-mode'>Arcade - 街机模式</a></center>
+			<center><a href='tap.html#' id='start-game-survivor' class='survivor-mode'>Survivor - 生存模式</a></center>
+			<center class='how-to' ><a href='tap.html#' id='how-to-play'>游戏规则</a></center>
+		  
+      <h2 class='info-autor'>程序@muvobit 汉化@创意哥</h2>
+    </div>
+		<div id='tutorial-container' class='hidden'>
+			<center>
+			<div class='tutorial-cont'>
+        		<p>把泡泡戳破！<br>
+				不要急，越是快消失的泡泡，戳破后得到的分数越多!</p>
+				<canvas id='show-timer-2' class='tutorial-canvas' width='30' height='30'></canvas><br>
+        		<p>注意跳跃的泡泡，不要让他跑了，戳破后背景会变成红色，疯狂起来!</p>
+				<canvas id='show-timer-madness' class='tutorial-canvas' width='90' height='55'></canvas>
+				<p>一次戳破多个泡泡，得到更多分数！</p>
+				<p><strong class='c-arcade'>Arcade - 街机模式</strong> <br>时间结束前戳尽可能多的泡泡，达到规定分数可晋级。</p>
+				<p><strong class='c-survivor' >Survivor - 生存模式</strong> <br>不要让泡泡消失，你有三条命，消失一个泡泡扣一条命。</p>
+        <br><br><a href='tap.html#' id='close-how-to-play' class='bt-general'>关闭</a>
+		</center>
+		</div>
+		<div id='player-container' class='hidden'>
+			<center>
+         <form id='player-form'>
+           <center class='tit-type'>输入你的名字...</center>
+           <input type='text' id='player-input'><br>
+           <a href='tap.html#' class='arcade-mode' id='start-game'>开始</a>
+         </form>
+      </center>
+			<!--<center><a href='#' id='re-start-game'>Play >></a></center>-->
+		</div>
+		<div id='endgame-container' class='hidden'>
+
+		</div>
+		<div id='game-container' class=''>
+			<p class='hidden' id='change-level'>级别 <span id='change-level-value'>1</span></p>
+			<p class='hidden' id='change-level-start'>&#9654;</p>
+			<div id='hud' class='hidden'>
+				<p class='infoBar'><span id='lives_pti_needed_label'>:</span><br><span id='lives_pti_needed'></span></p>
+				<p class='infoBar'>时间:<br><span id='timer'></span></p>
+				<p class='infoText'>分数:<br><span class="c1" id='points'></span></p>
+				<p class='infoText'>等级:<br><span class="c1" id='level'></span></p>
+				<p id='statusBtn' class='infoStatus'><span class="status c1" id='status'></span></p>
+			</div>
+			<canvas id='game-stage' width='800' height='600'>
+				你的浏览器不支持这个游戏。
+			</canvas>
+		</div>
+	</div>
+<script type="text/javascript" src="script.min.js"></script>
+</html>

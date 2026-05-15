@@ -1,0 +1,57 @@
+*{font-family:monospace}
+body{
+	display:flex;align-items:center;justify-content:center;
+	width:100vw;height:100vh;margin:0;
+	background:repeating-linear-gradient(-45deg,#222,#222 10px,#333 10px,#333 20px)
+}
+#app{position:relative;width:95vw;height:440px;border:15px solid #6c6c6c;background-color:#000}
+canvas{background:#000;width:95vw;height:256px;margin-top:20px}
+p{margin:0;color:#fff}
+.info{
+	display:flex;top:1px;justify-content:space-between;position:absolute;
+	z-index:1;width:70vw;padding:10px;box-sizing:border-box
+}
+.info .resource{font-size:24px}
+.wg{text-align:center}
+.wg .wave{font-size:30px;font-weight:700}
+.wg .generation{font-size:14px;color:#aaa}
+.ups{
+	display:flex;gap:30px;background-color:#000;position:absolute;
+	top:300px;padding-left:10px;white-space: nowrap;
+}
+.ups>*{flex:1}
+.pa-con>span,.ws-con>span{
+	display:block;color:#fff;
+	font-size:20px;margin-bottom:2px;white-space: nowrap;
+}
+.ups .pa,.ups .ws{display:flex;flex-wrap:wrap;gap:6px;;white-space: nowrap;}
+.button{
+	flex-basis:45%;display:block;width:100%;background:transparent;
+	color:#fff;border:2px solid #bbb;font-size:16px;height:48px
+}
+.button:hover{cursor:pointer}
+.button:not(.notenough):active{background:#00db00}
+.button>div{font-size:13px}
+.button .amount{color:#00db00;font-weight:600}
+.button .resource{display:block}
+.button.notenough .resource{color:red}
+.ba{
+	position:absolute;top:150px;left:50%;transform:translate(-50%,-50%);
+	min-width:600px;height:70px;text-align:center;color:#fff;
+	font-size:70px;opacity:0;transition:opacity .5s
+}
+.ba.show{opacity:1}
+.hide{display:none}
+.sb{
+	position:absolute;top:320px;left:50%;transform:translate(-50%);width:200px;height:80px;
+	font-size:40px;background:#000;color:#fff;border:2px solid #bbb;cursor:pointer
+}
+.ebs{display:flex;justify-content:center}
+.eyb,.enb{width:180px;height:64px;font-size:2em;background:#000;color:#fff;border:2px solid #bbb}
+.eyb{margin-right:10px}
+.sb:hover,.eyb:hover,.enb:hover{color:#00db00}
+.cr-ups,.cr-ws{position:absolute;color:#fff}
+.cr-ups{top:52px;left:10px}
+.cr-ws{top:52px;right:10px;text-align:end}
+.cr-ups ul,.cr-ws ul{margin:0;padding:0;list-style:none;width:7em}
+.cr-ups ul li,.cr-ws ul li{display:flex;justify-content:space-between}

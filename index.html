@@ -1,0 +1,590 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>H5 游戏合集</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+
+    <script type="text/javascript" src="public.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4725615404219961"
+        crossorigin="anonymous"></script>
+
+    <style>
+        body,
+        .header,
+        .header *,
+        .com *,
+        .game-list *,
+        .btnbox * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header,
+        .header ul,
+        .com ul,
+        .game-list ul,
+        .btnbox ul,
+        .header,
+        .header li,
+        .com li,
+        .game-list li,
+        .btnbox li {
+            list-style: none;
+        }
+
+        input,
+        textarea {
+            -webkit-appearance: none;
+        }
+
+        body {
+            font-size: 14px;
+        }
+
+        body {
+            font-family: "微软雅黑", "宋体", Arial;
+            line-height: 1.8;
+        }
+
+        .clearfix:after {
+            content: " ";
+            height: 0;
+            visibility: hidden;
+            display: block;
+            clear: both;
+        }
+
+        * html .clearfix {
+            zoom: 1;
+        }
+
+        *:first-child+html .clearfix {
+            zoom: 1;
+        }
+
+        .wrapper {
+            _width: 640px;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+
+        .game-list dl {
+            border-bottom: 1px solid #e9e9e9;
+            box-shadow: 0 1px 0 #FFF;
+            -webkit-border-bottom: none;
+            -webkit-box-shadow: none;
+        }
+
+        .game-list {
+            margin: 15px 10px;
+            margin-bottom: 100px;
+            text-align: left;
+            font-size: 12px;
+            overflow: hidden;
+        }
+
+        .game-list a {
+            text-decoration: none;
+        }
+
+        .game-list img {
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 4px;
+        }
+
+        .game-list dl {
+            margin: 5px 0;
+            padding-bottom: 5px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .game-list dl dt {
+            float: right;
+            padding: 0;
+            height: 50px;
+        }
+
+        .game-list dl dd {
+            float: right;
+            width: 100%;
+            margin-right: -55px;
+        }
+
+        .game-list dl div {
+            padding-right: 70px;
+        }
+
+        .game-list dl p {
+            color: #999999;
+            padding-right: 8px;
+            line-height: 1.5;
+        }
+
+        .game-list dl h3 {
+            color: #5a5a5a;
+            font-size: 14px;
+        }
+
+        .game-icon {
+            display: inline-block;
+            width: 55px;
+            height: 70px;
+            line-height: 15px;
+            text-align: center;
+            color: #808080;
+            text-decoration: none;
+            margin: 5px 0;
+            background-position: center 6px;
+            background-repeat: no-repeat;
+            background-size: 45px auto;
+        }
+
+        .header {
+            height: 54px;
+            color: #FFF;
+            position: relative;
+            overflow: hidden;
+            background-repeat: no-repeat;
+            background-position: right top;
+            background-size: auto 54px;
+            -webkit-box-shadow: 0 2px 10px 2px #d3d3d3;
+            box-shadow: 0 2px 10px 2px #d3d3d3;
+            margin-bottom: 10px;
+        }
+
+        .header .left {
+            float: left;
+            height: 100%;
+            width: 246px;
+            background-repeat: no-repeat;
+            background-position: left 0;
+            background-size: 246px 177px;
+        }
+
+        .header .right {
+            float: right;
+            height: 100%;
+            width: 64px;
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            background-size: 246px 177px;
+        }
+
+        .header .left h1 {
+            padding: 15px 0 2px 15px;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 23px;
+        }
+
+        .header .left span {
+            font-size: 13px;
+            line-height: 18px;
+            padding: 0 0 0 15px;
+        }
+
+        .header {
+            background: #2196f3;
+        }
+
+        .menu {
+            width: 100%;
+            height: 40px;
+            border-top: 1px solid #c5c5c5;
+            position: fixed;
+            bottom: 0;
+            z-index: 100;
+        }
+
+        .menu a {
+            text-decoration: none;
+            display: block;
+            float: left;
+            width: 33.3%;
+            border-right: 1px solid #c5c5c5;
+            box-sizing: border-box;
+            height: 40px;
+            color: #4a4a4a;
+            font: normal 14px/40px'microsoft yahei';
+            background: #fafafa;
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+        }
+
+        .menu a.a2 {
+            font-weight: bold;
+            color: #EB6100;
+            text-indent: 6px;
+        }
+
+        .menu a.a3 {
+            border: none;
+        }
+
+        .menu a.cur {
+            color: #d9004a;
+        }
+
+        .play-btn {
+            display: inline-block;
+            width: 60px;
+            height: 33px;
+            line-height: 33px;
+            background-color: #44b549;
+            border-radius: 5px;
+            text-align: center;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            right: 55px;
+            margin-top: -12px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "jtddl410lx");
+    </script>
+</head>
+
+<body>
+    <ul class="header">
+        <li class="left">
+            <h1>H5 游戏合集</h1>
+        </li>
+        <li class="right">
+            <!---->
+        </li>
+    </ul>
+
+    <div class="wrapper" id="wrapper">
+        <div class="game-list">
+            <a href="adarkroom/index.html" target="_blank">
+                <dl class="clearfix">
+                    <dd>
+                        <div style="position: relative;padding-right: 110px; padding-left: 12px;padding-top: 8px;">
+                            <h3>小黑屋</h3>
+                            <p>一款经典耐玩的文字冒险游戏</p>
+                            <span class="play-btn">开始玩</span>
+                        </div>
+                    </dd>
+                    <dt class="game-icon">
+                        <img src="adarkroom/favicon.png" />
+                    </dt>
+                </dl>
+            </a>
+            <a href="gomoku/index.html" target="_blank">
+                <dl class="clearfix">
+                    <dd>
+                        <div style="position: relative;padding-right: 110px; padding-left: 12px;padding-top: 8px;">
+                            <h3>AI 五子棋</h3>
+                            <p>试试你能打得过 AI 吗</p>
+                            <span class="play-btn">开始玩</span>
+                        </div>
+                    </dd>
+                    <dt class="game-icon">
+                        <img src="gomoku/favicon.png" />
+                    </dt>
+                </dl>
+            </a>
+            <a href="tetris/index.html" target="_blank">
+                <dl class="clearfix">
+                    <dd>
+                        <div style="position: relative;padding-right: 110px; padding-left: 12px;padding-top: 8px;">
+                            <h3>俄罗斯方块游戏机</h3>
+                            <p>8090后的童年回忆</p>
+                            <span class="play-btn">开始玩</span>
+                        </div>
+                    </dd>
+                    <dt class="game-icon">
+                        <img src="tetris/favicon.png" />
+                    </dt>
+                </dl>
+            </a>
+            <a href="poker/index.html" target="_blank">
+                <dl class="clearfix">
+                    <dd>
+                        <div style="position: relative;padding-right: 110px; padding-left: 12px;padding-top: 8px;">
+                            <h3>纸牌</h3>
+                            <p>Windows 纸牌游戏同款玩法</p>
+                            <span class="play-btn">开始玩</span>
+                        </div>
+                    </dd>
+                    <dt class="game-icon">
+                        <img src="poker/favicon.png" />
+                    </dt>
+                </dl>
+            </a>
+            <a href="flappy-bird/index.html" target="_blank">
+                <dl class="clearfix">
+                    <dd>
+                        <div style="position: relative;padding-right: 110px; padding-left: 12px;padding-top: 8px;">
+                            <h3>像素小鸟</h3>
+                            <p>游戏中玩家必须控制一只胖乎乎的小鸟，跨越由各种不同长度水管组成的障碍</p>
+                            <span class="play-btn">开始玩</span>
+                        </div>
+                    </dd>
+                    <dt class="game-icon">
+                        <img src="flappy-bird/favicon.png" />
+                    </dt>
+                </dl>
+            </a>
+            <a href="flaser-bird/index.html" target="_blank">
+                <dl class="clearfix">
+                    <dd>
+                        <div style="position: relative;padding-right: 110px; padding-left: 12px;padding-top: 8px;">
+                            <h3>压扁小鸟</h3>
+                            <p>跳不过就压扁！</p>
+                            <span class="play-btn">开始玩</span>
+                        </div>
+                    </dd>
+                    <dt class="game-icon">
+                        <img src="flaser-bird/favicon.png" />
+                    </dt>
+                </dl>
+            </a>
+            <a href="cube/index.html" target="_blank">
+                <dl class="clearfix">
+                    <dd>
+                        <div style="position: relative;padding-right: 110px; padding-left: 12px;padding-top: 8px;">
+                            <h3>3D 魔方</h3>
+                            <p>魔方与华容道、法国的独立钻石棋并称为智力游戏界的三大不可思议</p>
+                            <span class="play-btn">开始玩</span>
+                        </div>
+                    </dd>
+                    <dt class="game-icon">
+                        <img src="cube/favicon.png" />
+                    </dt>
+                </dl>
+            </a>
+            <a href="menja/index.html" target="_blank">
+                <dl class="clearfix">
+                    <dd>
+                        <div style="position: relative;padding-right: 110px; padding-left: 12px;padding-top: 8px;">
+                            <h3>积木切切乐</h3>
+                            <p>通过滑动鼠标切碎积木块</p>
+                            <span class="play-btn">开始玩</span>
+                        </div>
+                    </dd>
+                    <dt class="game-icon">
+                        <img src="menja/favicon.png" />
+                    </dt>
+                </dl>
+            </a>
+            <a href="looptap/index.html" target="_blank">
+                <dl class="clearfix">
+                    <dd>
+                        <div style="position: relative;padding-right: 110px; padding-left: 12px;padding-top: 8px;">
+                            <h3>looptap</h3>
+                            <p>消磨时间的小游戏，把球停在有颜色区域</p>
+                            <span class="play-btn">开始玩</span>
+                        </div>
+                    </dd>
+                    <dt class="game-icon">
+                        <img src="looptap/favicon.png" />
+                    </dt>
+                </dl>
+            </a>
+            <a href="stack/index.html" target="_blank">
+                <dl class="clearfix">
+                    <dd>
+                        <div style="position: relative;padding-right: 110px; padding-left: 12px;padding-top: 8px;">
+                            <h3>叠砖块</h3>
+                            <p>试试你能叠多高</p>
+                            <span class="play-btn">开始玩</span>
+                        </div>
+                    </dd>
+                    <dt class="game-icon">
+                        <img src="stack/favicon.png" />
+                    </dt>
+                </dl>
+            </a>
+            <a href="plane-wars/index.html" target="_blank">
+                <dl class="clearfix">
+                    <dd>
+                        <div style="position: relative;padding-right: 110px; padding-left: 12px;padding-top: 8px;">
+                            <h3>飞机大战</h3>
+                            <p>微信经典飞机大战</p>
+                            <span class="play-btn">开始玩</span>
+                        </div>
+                    </dd>
+                    <dt class="game-icon">
+                        <img src="plane-wars/favicon.png" />
+                    </dt>
+                </dl>
+            </a>
+            <a href="dinosaur/index.html" target="_blank">
+                <dl class="clearfix">
+                    <dd>
+                        <div style="position: relative;padding-right: 110px; padding-left: 12px;padding-top: 8px;">
+                            <h3>恐龙快跑</h3>
+                            <p>谷歌浏览器断网时的恐龙小彩蛋</p>
+                            <span class="play-btn">开始玩</span>
+                        </div>
+                    </dd>
+                    <dt class="game-icon">
+                        <img src="dinosaur/favicon.png" />
+                    </dt>
+                </dl>
+            </a>
+            <a href="hop/index.html" target="_blank">
+                <dl class="clearfix">
+                    <dd>
+                        <div style="position: relative;padding-right: 110px; padding-left: 12px;padding-top: 8px;">
+                            <h3>奔跑吧兔子</h3>
+                            <p>神庙逃亡风格的跑酷游戏</p>
+                            <span class="play-btn">开始玩</span>
+                        </div>
+                    </dd>
+                    <dt class="game-icon">
+                        <img src="hop/favicon.png" />
+                    </dt>
+                </dl>
+            </a>
+            <a href="vikings/index.html" target="_blank">
+                <dl class="clearfix">
+                    <dd>
+                        <div style="position: relative;padding-right: 110px; padding-left: 12px;padding-top: 8px;">
+                            <h3>维京战争</h3>
+                            <p>以维京皇室战争为原型的策略游戏</p>
+                            <span class="play-btn">开始玩</span>
+                        </div>
+                    </dd>
+                    <dt class="game-icon">
+                        <img src="vikings/favicon.png" />
+                    </dt>
+                </dl>
+            </a>
+            <a href="bardo/index.html" target="_blank">
+                <dl class="clearfix">
+                    <dd>
+                        <div style="position: relative;padding-right: 110px; padding-left: 12px;padding-top: 8px;">
+                            <h3>Bardo</h3>
+                            <p>一款精彩的小游戏</p>
+                            <span class="play-btn">开始玩</span>
+                        </div>
+                    </dd>
+                </dl>
+            </a>
+            <a href="bomb/index.html" target="_blank">
+                <dl class="clearfix">
+                    <dd>
+                        <div style="position: relative;padding-right: 110px; padding-left: 12px;padding-top: 8px;">
+                            <h3>炸弹人</h3>
+                            <p>经典双人炸弹人对战游戏</p>
+                            <span class="play-btn">开始玩</span>
+                        </div>
+                    </dd>
+                </dl>
+            </a>
+            <a href="fungus/index.html" target="_blank">
+                <dl class="clearfix">
+                    <dd>
+                        <div style="position: relative;padding-right: 110px; padding-left: 12px;padding-top: 8px;">
+                            <h3>Fungus</h3>
+                            <p>有趣的孢子生长游戏</p>
+                            <span class="play-btn">开始玩</span>
+                        </div>
+                    </dd>
+                </dl>
+            </a>
+            <a href="migong/index.html" target="_blank">
+                <dl class="clearfix">
+                    <dd>
+                        <div style="position: relative;padding-right: 110px; padding-left: 12px;padding-top: 8px;">
+                            <h3>迷宫</h3>
+                            <p>迷宫小游戏</p>
+                            <span class="play-btn">开始玩</span>
+                        </div>
+                    </dd>
+                </dl>
+            </a>
+            <a href="nebula/index.html" target="_blank">
+                <dl class="clearfix">
+                    <dd>
+                        <div style="position: relative;padding-right: 110px; padding-left: 12px;padding-top: 8px;">
+                            <h3>Noxious Nebula</h3>
+                            <p>一款太空射击游戏</p>
+                            <span class="play-btn">开始玩</span>
+                        </div>
+                    </dd>
+                </dl>
+            </a>
+            <a href="stronger/index.html" target="_blank">
+                <dl class="clearfix">
+                    <dd>
+                        <div style="position: relative;padding-right: 110px; padding-left: 12px;padding-top: 8px;">
+                            <h3>Stronger</h3>
+                            <p>失败只会让我们更加强大！</p>
+                            <span class="play-btn">开始玩</span>
+                        </div>
+                    </dd>
+                </dl>
+            </a>
+            <a href="tap/index.html" target="_blank">
+                <dl class="clearfix">
+                    <dd>
+                        <div style="position: relative;padding-right: 110px; padding-left: 12px;padding-top: 8px;">
+                            <h3>戳泡泡</h3>
+                            <p>戳破泡泡获取分数</p>
+                            <span class="play-btn">开始玩</span>
+                        </div>
+                    </dd>
+                </dl>
+            </a>
+            <a href="tuixiangzi/index.html" target="_blank">
+                <dl class="clearfix">
+                    <dd>
+                        <div style="position: relative;padding-right: 110px; padding-left: 12px;padding-top: 8px;">
+                            <h3>推箱子</h3>
+                            <p>经典推箱子益智游戏</p>
+                            <span class="play-btn">开始玩</span>
+                        </div>
+                    </dd>
+                </dl>
+            </a>
+            <a href="waziyouxi/index.html" target="_blank">
+                <dl class="clearfix">
+                    <dd>
+                        <div style="position: relative;padding-right: 110px; padding-left: 12px;padding-top: 8px;">
+                            <h3>袜子游戏</h3>
+                            <p>趣味小游戏</p>
+                            <span class="play-btn">开始玩</span>
+                        </div>
+                    </dd>
+                </dl>
+            </a>
+            <a href="oitrainer/index.html" target="_blank">
+                <dl class="clearfix">
+                    <dd>
+                        <div style="position: relative;padding-right: 110px; padding-left: 12px;padding-top: 8px;">
+                            <h3>OI Trainer</h3>
+                            <p>信息学竞赛训练工具</p>
+                            <span class="play-btn">开始玩</span>
+                        </div>
+                    </dd>
+                </dl>
+            </a>
+        </div>
+    </div>
+
+    <div class="menu">
+        <a href="https://www.gzeven.cc.cd/">作者主页</a>
+        <a href="https://xiaobawang.gzeven.cc.cd/">小霸王</a>
+        <a href="https://format.gzeven.cc.cd/">洛谷文章题解格式化</a>
+    </div>
+</body>
+
+</html>
